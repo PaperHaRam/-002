@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>모로우 도감</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121829; /* 전체 배경 */
+      color: #ffffff;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1920px;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-section {
+      background-color: #dac90d; /* 퍼스널 컬러 */
+      padding: 30px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .top-section h1 {
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    .top-section span {
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .image-section {
+      background-color: #dac90d; /* 퍼스널 컬러 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .image-section img {
+      max-height: 300px;
+    }
+
+    .info-section {
+      background-color: #1E2638;
+      padding: 40px 80px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .types {
+      display: flex;
+      gap: 20px;
+    }
+
+    .type {
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .type.grass {
+      background-color: #898989; /* 특징 1 */
+    }
+
+    .type.poison {
+      background-color: #bf5252; /* 특징 2 */
+    }
+
+    .info-grid {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+    }
+
+    .info-item span {
+      display: block;
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    .info-item strong {
+      font-size: 1.6rem;
+    }
+
+    .base-stats, .description {
+      text-align: center;
+    }
+
+    .base-stats h2, .description h2 {
+      margin-bottom: 10px;
+      color: #dac90d; /* 퍼스널 컬러 */
+    }
+
+    .stat-list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 1.2rem;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-section">
+      <h1>모로우 드 바로네스</h1>
+      <span>#002</span>
+    </div>
+
+    <div class="image-section">
+      <img src="https://files.d20.io/images/437040712/qUVnZaJRk-cZ__H1wPF3sA/max.png" alt="포켓몬 이미지" />
+    </div>
+
+    <div class="info-section">
+      <div class="types">
+        <div class="type grass">기계 인간</div>
+        <div class="type poison">로그</div>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <span>Age</span>
+          <strong>12/23</strong>
+        </div>
+        <div class="info-item">
+          <span>Weight</span>
+          <strong>67kg</strong>
+        </div>
+        <div class="info-item">
+          <span>Height</span>
+          <strong>153cm</strong>
+        </div>
+        <div class="info-item">
+          <span>Main Ability</span>
+          <strong>은신<br>손속임</strong>
+        </div>
+      </div>
+
+      <div class="base-stats">
+        <h2>기본 능력치</h2>
+        <div class="stat-list">
+          <div>STR 13</div>
+          <div>DEX 20</div>
+          <div>CON 14</div>
+          <div>INT 8</div>
+          <div>WIS 10</div>
+          <div>CHA 7</div>
+        </div>
+      </div>
+
+      <div class="description">
+        <h2>설명</h2>
+        <p>어느 귀족 가문에 의해 만들어진 워포지드 종족.<br>자신의 부인의 죽음이 임박한것을 깨달은 남작은 자신의 부인의 형태를 온전히 보존하고, 그녀와 소통할 수 있는 방법을 강구했다.<br>부인의 육신을 워포지드로 개조하고 그 육신을 유지하는 것 까지는 좋았으나 그 형태는 온전치 않은 것, 그녀의 기억은 계승되지 못했다.<br>탄생한 워포지드는 모체인 남작 부인을 모방해 행동하도록 강요받았고, 그 사실을 아는 최측근들을 제외한 남작의 하인들로 하여금,<br>'모로우 드 바로네스', 남작 부인 그 자체로서의 대우를 받았다.<br>귀족 부인의 소양을 갖추고, 귀족 부인으로서 자라났지만, 남작의 마음은 점점 죽어가고 있었다.<br>어렵사리 보존한 부인이었지만, 그녀는 더 이상 그녀가 아니었고, 남작 또한 그 사실을 겸허히 받아들인 채 죽어가고 있었다.<br>아이도 없는 집안에서, 대외적으로는 유일히 생존한 모양새였던 그녀는, 남작 가문의 모든 것을 손에 쥘 수 있었다.<br>하지만 가문에서 얻을 수 있었던 것은 부수적인 것 들, 부질없는 것 들로 인식했던 워포지드는, 눈을 가린 채 후드를 쓰고 하인들 몰래 외출을 나가기 시작했다.<br>종족적 특성이었는지, 성격적 특성이었는지는 모르겠지만, 사람들로 하여금 무언가를 훔치는게 특출났던 모양이다.<br>하인들도 그 손버릇을 눈치 챘는지 언제부턴가 잔소리를 하기 시작했다.<br>하지만 한 번 손맛을 본 워포지드는 소매치기를 하는 것을 그만두기 쉽지 않았고,<br>결국 하인들의 잔소리를 피해 외출을 하는 빈도, 나가는 시간 등이 길어지기 일쑤였고,<br>소매치기를 하다가 치안대에게 발각이 되어 도주를 하던 와중, 너무 멀리 오게 되어 지금에 이르게 되었다.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
